@@ -1,7 +1,7 @@
 import streamlit as st
 
 from datetime import date
-import yfinance as yf
+import yfinance as yfs
 from fbprophet import Prophet
 from fbprophet.plot import plot_plotly
 from plotly import graph_objs as go
@@ -25,7 +25,7 @@ period = n_years * 365
 
 @st.cache
 def load_data(ticker):
-    data = yf.download(ticker, START, TODAY)
+    data = yfs.download(ticker, START, TODAY)
     data.reset_index(inplace=True)
     return data
 
