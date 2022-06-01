@@ -1,4 +1,4 @@
-import yfinance as yfs
+import yfinance as yf
 import streamlit as st
 
 from datetime import date
@@ -26,7 +26,7 @@ period = n_years * 365
 
 @st.cache
 def load_data(ticker):
-    data = yfs.download(ticker, START, TODAY)
+    data = yf.download(ticker, START, TODAY)
     data.reset_index(inplace=True)
     return data
 
