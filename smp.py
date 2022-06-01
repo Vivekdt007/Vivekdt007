@@ -1,8 +1,7 @@
-import yfinance as yf
 import streamlit as st
 
 from datetime import date
-
+import yfinance as yf
 from fbprophet import Prophet
 from fbprophet.plot import plot_plotly
 from plotly import graph_objs as go
@@ -14,7 +13,7 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title('Stock Forecast App')
 
-image= Image.open("SMP.png")
+image= Image.open("C:/Users/vivek/Desktop/Project/SMP.png")
 st.image(image, use_column_width=True)
 
 stocks = ('TATAPOWER.NS','ADANIPOWER.NS','RELCAPITAL.BO')
