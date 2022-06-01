@@ -13,7 +13,7 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title('Stock Forecast App')
 
-image= Image.open("C:/Users/vivek/Desktop/Project/SMP.png")
+image= Image.open("SMP.png")
 st.image(image, use_column_width=True)
 
 stocks = ('TATAPOWER.NS','ADANIPOWER.NS','RELCAPITAL.BO')
